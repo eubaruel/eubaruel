@@ -1,0 +1,469 @@
+<svg
+  width="100%"
+  viewBox="0 0 900 460"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Lucas Baruel Cestaro - Desenvolvedor"
+>
+  <defs>
+
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#111820"/>
+    </linearGradient>
+
+    <linearGradient id="sage" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#789A82"/>
+      <stop offset="100%" stop-color="#9AB5A0"/>
+    </linearGradient>
+
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#789A82" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#789A82" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow
+        dx="0"
+        dy="10"
+        stdDeviation="20"
+        flood-color="#000000"
+        flood-opacity="0.28"
+      />
+    </filter>
+
+    <style>
+
+      .title {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-weight: 700;
+      }
+
+      .body {
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Helvetica,
+          Arial,
+          sans-serif;
+      }
+
+      .mono {
+        font-family:
+          "SFMono-Regular",
+          Consolas,
+          "Liberation Mono",
+          monospace;
+      }
+
+      .fade {
+        animation: fadeUp 0.8s ease-out both;
+      }
+
+      .fade2 {
+        animation: fadeUp 0.8s 0.12s ease-out both;
+      }
+
+      .fade3 {
+        animation: fadeUp 0.8s 0.24s ease-out both;
+      }
+
+      .fade4 {
+        animation: fadeUp 0.8s 0.36s ease-out both;
+      }
+
+      .blink {
+        animation: blink 1.2s ease-in-out infinite;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes blink {
+        0%,
+        45% {
+          opacity: 1;
+        }
+
+        50%,
+        100% {
+          opacity: 0;
+        }
+      }
+
+    </style>
+  </defs>
+
+
+  <!-- ===================================================== -->
+  <!-- BACKGROUND -->
+  <!-- ===================================================== -->
+
+  <rect
+    width="900"
+    height="460"
+    rx="26"
+    fill="url(#background)"
+  />
+
+  <!-- Subtle ambient glow -->
+  <circle
+    cx="820"
+    cy="30"
+    r="220"
+    fill="url(#glow)"
+  />
+
+  <circle
+    cx="40"
+    cy="450"
+    r="160"
+    fill="url(#glow)"
+  />
+
+
+  <!-- ===================================================== -->
+  <!-- MAIN CARD -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="42"
+    y="42"
+    width="816"
+    height="376"
+    rx="22"
+    fill="#111820"
+    stroke="#202A33"
+    stroke-width="1"
+    filter="url(#shadow)"
+  />
+
+
+  <!-- ===================================================== -->
+  <!-- ACCENT -->
+  <!-- ===================================================== -->
+
+  <rect
+    x="78"
+    y="78"
+    width="42"
+    height="4"
+    rx="2"
+    fill="url(#sage)"
+    class="fade"
+  />
+
+
+  <!-- ===================================================== -->
+  <!-- INTRO -->
+  <!-- ===================================================== -->
+
+  <g class="fade">
+
+    <text
+      x="78"
+      y="125"
+      class="body"
+      font-size="14"
+      fill="#7D8994"
+    >
+      Olá, eu sou
+    </text>
+
+    <text
+      x="78"
+      y="169"
+      class="title"
+      font-size="38"
+      fill="#F0F3F6"
+    >
+      Lucas Baruel Cestaro
+    </text>
+
+    <text
+      x="78"
+      y="199"
+      class="body"
+      font-size="16"
+      fill="#9AA6B2"
+    >
+      Desenvolvedor • Automação • Sistemas
+    </text>
+
+  </g>
+
+
+  <!-- ===================================================== -->
+  <!-- DESCRIPTION -->
+  <!-- ===================================================== -->
+
+  <g class="fade2">
+
+    <text
+      x="78"
+      y="243"
+      class="body"
+      font-size="14"
+      fill="#8B97A3"
+    >
+      Gosto de transformar problemas reais em software,
+    </text>
+
+    <text
+      x="78"
+      y="266"
+      class="body"
+      font-size="14"
+      fill="#8B97A3"
+    >
+      automatizando processos e criando ferramentas úteis.
+    </text>
+
+  </g>
+
+
+  <!-- ===================================================== -->
+  <!-- CODE LINE -->
+  <!-- ===================================================== -->
+
+  <g class="fade3">
+
+    <text
+      x="78"
+      y="308"
+      class="mono"
+      font-size="12"
+      fill="#66727D"
+    >
+      <tspan fill="#789A82">$</tspan>
+      python solve_problem.py
+      <tspan
+        class="blink"
+        fill="#789A82"
+      >▌</tspan>
+    </text>
+
+  </g>
+
+
+  <!-- ===================================================== -->
+  <!-- TECHNOLOGIES -->
+  <!-- ===================================================== -->
+
+  <g class="fade4">
+
+    <!-- Python -->
+
+    <rect
+      x="78"
+      y="343"
+      width="92"
+      height="32"
+      rx="16"
+      fill="#171F27"
+      stroke="#28333D"
+    />
+
+    <circle
+      cx="96"
+      cy="359"
+      r="3.5"
+      fill="#7FA58A"
+    />
+
+    <text
+      x="108"
+      y="363"
+      class="body"
+      font-size="12"
+      font-weight="600"
+      fill="#AEB8C1"
+    >
+      Python
+    </text>
+
+
+    <!-- JavaScript -->
+
+    <rect
+      x="180"
+      y="343"
+      width="112"
+      height="32"
+      rx="16"
+      fill="#171F27"
+      stroke="#28333D"
+    />
+
+    <circle
+      cx="198"
+      cy="359"
+      r="3.5"
+      fill="#8CA994"
+    />
+
+    <text
+      x="210"
+      y="363"
+      class="body"
+      font-size="12"
+      font-weight="600"
+      fill="#AEB8C1"
+    >
+      JavaScript
+    </text>
+
+
+    <!-- APIs -->
+
+    <rect
+      x="302"
+      y="343"
+      width="78"
+      height="32"
+      rx="16"
+      fill="#171F27"
+      stroke="#28333D"
+    />
+
+    <circle
+      cx="320"
+      cy="359"
+      r="3.5"
+      fill="#7FA58A"
+    />
+
+    <text
+      x="332"
+      y="363"
+      class="body"
+      font-size="12"
+      font-weight="600"
+      fill="#AEB8C1"
+    >
+      APIs
+    </text>
+
+
+    <!-- Automação -->
+
+    <rect
+      x="390"
+      y="343"
+      width="116"
+      height="32"
+      rx="16"
+      fill="#171F27"
+      stroke="#28333D"
+    />
+
+    <circle
+      cx="408"
+      cy="359"
+      r="3.5"
+      fill="#8CA994"
+    />
+
+    <text
+      x="420"
+      y="363"
+      class="body"
+      font-size="12"
+      font-weight="600"
+      fill="#AEB8C1"
+    >
+      Automação
+    </text>
+
+  </g>
+
+
+  <!-- ===================================================== -->
+  <!-- BOTTOM -->
+  <!-- ===================================================== -->
+
+  <line
+    x1="78"
+    y1="395"
+    x2="822"
+    y2="395"
+    stroke="#202A33"
+    stroke-width="1"
+  />
+
+  <g class="fade4">
+
+    <text
+      x="78"
+      y="410"
+      class="body"
+      font-size="10"
+      fill="#687580"
+    >
+      GitHub
+    </text>
+
+    <circle
+      cx="123"
+      cy="407"
+      r="2"
+      fill="#3C4944"
+    />
+
+    <text
+      x="137"
+      y="410"
+      class="body"
+      font-size="10"
+      fill="#687580"
+    >
+      LinkedIn
+    </text>
+
+    <circle
+      cx="201"
+      cy="407"
+      r="2"
+      fill="#3C4944"
+    />
+
+    <text
+      x="215"
+      y="410"
+      class="body"
+      font-size="10"
+      fill="#687580"
+    >
+      Projetos
+    </text>
+
+    <text
+      x="822"
+      y="410"
+      text-anchor="end"
+      class="mono"
+      font-size="9"
+      fill="#4F5B64"
+    >
+      build • automate • improve
+    </text>
+
+  </g>
+
+</svg>
